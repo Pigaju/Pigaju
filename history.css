@@ -1,0 +1,66 @@
+body{
+    background-color: red;
+}
+.title{
+    border: 10px solid white;
+    background-color: red;
+    margin:auto;
+    width: 33%;
+    font-size: 40px;
+    color:white;
+    text-align: center;
+}
+.tb{
+    text-align: center;
+    border: 10px solid white;
+    background-color: red;
+    margin: 80px;
+    padding: 10px;
+    font-size: 20px;
+    color:white;
+}
+a{
+    color:darkgreen;
+}
+.nav {
+    background-color: red;
+    display: flex;
+    justify-content: right;
+}
+
+@keyframes ungrow {
+    from{padding: 30px;
+    background-color:white;
+border-color: red;}
+to{
+    padding: 25px;
+    background-color: red;
+border-color: white; 
+}
+}
+.nav div {
+    border: 10px solid rgb(255, 255, 255);
+    background-color: red;
+    padding: 25px;
+    margin: 10px;
+    font-size: 25px;
+    animation-name:ungrow;
+    animation-duration:.3s;
+}
+@keyframes Grow {
+    from{padding: 25px;
+        background-color: red;
+    border-color: white;}
+    to{padding: 30px;
+    background-color:white;
+border-color: red;}
+}
+.nav div:hover {
+    background-color:white;
+    border-color: red;
+    padding: 30px;
+    margin: 10px;
+    font-size: 25px;
+    animation-name: Grow;
+    animation-duration: .3s;
+}
